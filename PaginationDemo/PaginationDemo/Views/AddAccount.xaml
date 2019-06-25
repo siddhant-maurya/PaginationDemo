@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaginationDemo.Views.AddAccount">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="User Name"
+                       WidthRequest="100"/>
+                <Entry x:Name="UserNameEntry"
+                       WidthRequest="100"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Password"
+                       WidthRequest="100"/>
+                <Entry x:Name="PasswordEntry"
+                       WidthRequest="100"/>
+            </StackLayout>
+            <Button Text="Submit"
+                    HorizontalOptions="Center"
+                    Clicked="AddAccountSubmit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
