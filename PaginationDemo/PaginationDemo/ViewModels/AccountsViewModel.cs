@@ -22,20 +22,20 @@ namespace PaginationDemo.ViewModels
         }
 
         private const int PageSize = 10;
-        public List<Account> AccountsList { get;  set; }
+        public ObservableCollection<Account> AccountsList { get;  set; }
         //public InfiniteScrollCollection<Account> AccountsList { get; set; }
         public AccountHelper _accountHelper = new AccountHelper();
 
         public AccountsViewModel()
         {
-            GetAccounts();
+            GetAccountsAsync();
         }
-        public void GetAccounts()
+        public async void GetAccountsAsync()
         {
             //var items = await _accountHelper.GetAccounts(pageIndex:0,pageSize:PageSize);
             //AccountsList.AddRange(items);
 
-            AccountsList = _accountHelper.GetAccounts();
+            AccountsList =  await _accountHelper.GetAccounts();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

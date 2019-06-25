@@ -27,7 +27,7 @@ namespace PaginationDemo.Views
 		}
         protected override async void OnAppearing()
         {
-            _accountViewModel.GetAccounts();
+            _accountViewModel.GetAccountsAsync();
         }
         private void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
         {

@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginationDemo.UWP", "Pagin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaginationDemo", "PaginationDemo\PaginationDemo\PaginationDemo.csproj", "{5E1837E4-06CB-4EA4-97B2-9E0EC4E7C462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xamarinapi", "xamarinapi\xamarinapi.csproj", "{D5F101C9-2066-436A-B556-B56101A78D94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xamarinapi", "xamarinapi\xamarinapi.csproj", "{D5F101C9-2066-436A-B556-B56101A78D94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

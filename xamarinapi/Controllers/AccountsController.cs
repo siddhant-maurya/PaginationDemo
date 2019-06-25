@@ -22,10 +22,9 @@ namespace xamarinapi.Controllers
 
         // GET: api/Accounts
         [HttpGet]
-        public IEnumerable<Account> GetAccounts()
+        public IEnumerable<Account> GetAccounts(int pageIndex, int pageSize)
         {
-            //return _context.Accounts.Skip(pageIndex * pageSize).Take(pageSize);
-            return _context.Accounts;
+            return _context.Accounts.Skip(pageIndex * pageSize).Take(pageSize);
         }
 
         // GET: api/Accounts/5
